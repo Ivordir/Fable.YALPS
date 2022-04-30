@@ -2,7 +2,7 @@
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <PackageId>Fable.YALPS</PackageId>
-    <Version>0.1.3</Version>
+    <Version>0.1.4</Version>
     <Authors>Ivordir</Authors>
     <Description>An F# / FABLE wrapper for the YALPS npm package.</Description>
     <PackageTags>fsharp;fable;linear programming;LP;MILP;simplex;optimization</PackageTags>
@@ -10,19 +10,19 @@
     <RepositoryUrl>https://github.com/Ivordir/Fable.YALPS.git</RepositoryUrl>
     <PackageReadmeFile>README.md</PackageReadmeFile>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
-    <TargetFramework>net5.0</TargetFramework>
+    <TargetFrameworks>net6.0;net5.0</TargetFrameworks>
   </PropertyGroup>
   <PropertyGroup>
     <NpmDependencies>
-        <NpmPackage Name="yalps" Version="gte 1.0.0 lt 2.0.0" ResolutionStrategy="Max" />
+      <NpmPackage Name="yalps" Version="gte 1.0.0 lt 2.0.0" ResolutionStrategy="Max" />
     </NpmDependencies>
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="Fable.YALPS.fs" />
   </ItemGroup>
-  <Import Project="..\.paket\Paket.Restore.targets" />
   <ItemGroup>
     <Content Include="*.fsproj; **\*.fs; **\*.fsi" PackagePath="fable\" />
-    <None Include="..\README.md" Pack="true" PackagePath="\"/>
+    <None Include="..\README.md" Pack="true" PackagePath="\" />
   </ItemGroup>
+  <Import Project="..\.paket\Paket.Restore.targets" />
 </Project>
