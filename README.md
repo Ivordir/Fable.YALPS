@@ -19,7 +19,7 @@ let model = Model.createAllInteger Maximize "profit" constraints variables
 let solution = Solver.solve model
 // { status = Optimal
 //   result = 14400.0
-//   variables: [ "table", 8; "dresser", 3 ] }
+//   variables: [| "table", 8; "dresser", 3 |] }
 ```
 
 With custom options:
