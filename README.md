@@ -17,7 +17,7 @@ let variables =
 
 let model = Model.createAllInteger Maximize "profit" constraints variables
 let solution = Solver.solve model
-// { status = "optimal"
+// { status = Optimal
 //   result = 14400.0
 //   variables: [ "table", 8; "dresser", 3 ] }
 ```
@@ -33,8 +33,8 @@ To fit better with F# code, the ability for sequences to be substitued with obje
 ```fsharp
 let constraints =
   {| wood = Constraint.lessEq 300.0
-     labor = Constraint.lessEq 110.0
-     storage = Constraint.lessEq 400.0 |}
+     labor = {| max = 110.0 |}
+     storage = {| max = 400.0 |} |}
 
 let variables =
   {| table = {| wood = 30.0; labor = 5.0; profit = 1200.0; storage = 30.0 |}
