@@ -128,7 +128,7 @@ module Model =
     (direction: Direction)
     (objective: 'ConstraintKey)
     (constraints: ('ConstraintKey * Constraint) seq)
-    (variables: ('VariableKey * ('ConstraintKey * float) seq) seq) =
+    (variables: ('VariableKey * #seq<'ConstraintKey * float>) seq) =
     {| direction = direction
        objective = objective
        constraints = constraints
@@ -140,7 +140,7 @@ module Model =
     (direction: Direction)
     (objective: 'ConstraintKey)
     (constraints: ('ConstraintKey * Constraint) seq)
-    (variables: ('VariableKey * ('ConstraintKey * float) seq) seq) =
+    (variables: ('VariableKey * #seq<'ConstraintKey * float>) seq) =
     {| direction = direction
        objective = objective
        constraints = constraints
@@ -153,7 +153,7 @@ module Model =
     (direction: Direction)
     (objective: 'ConstraintKey)
     (constraints: ('ConstraintKey * Constraint) seq)
-    (variables: ('VariableKey * ('ConstraintKey * float) seq) seq) =
+    (variables: ('VariableKey * #seq<'ConstraintKey * float>) seq) =
     {| direction = direction
        objective = objective
        constraints = constraints
@@ -167,7 +167,7 @@ module Model =
     (direction: Direction)
     (objective: 'ConstraintKey)
     (constraints: ('ConstraintKey * Constraint) seq)
-    (variables: ('VariableKey * ('ConstraintKey * float) seq) seq)
+    (variables: ('VariableKey * #seq<'ConstraintKey * float>) seq)
     (integers: 'VariableKey seq)
     (binaries: 'VariableKey seq) =
     {| direction = direction
