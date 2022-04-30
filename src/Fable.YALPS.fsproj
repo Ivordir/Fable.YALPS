@@ -2,7 +2,7 @@
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <PackageId>Fable.YALPS</PackageId>
-    <Version>0.1.0</Version>
+    <Version>0.1.1</Version>
     <Authors>Ivordir</Authors>
     <Description>An F# / FABLE wrapper for the YALPS npm package.</Description>
     <PackageTags>fsharp;fable;linear programming;LP;MILP;simplex;optimization</PackageTags>
@@ -22,6 +22,5 @@
   <Import Project="..\.paket\Paket.Restore.targets" />
   <ItemGroup>
     <Content Include="*.fsproj; **\*.fs; **\*.fsi" PackagePath="fable\" />
-    <None Include="..\README.md" Pack="true" PackagePath="\" />
   </ItemGroup>
 </Project>
