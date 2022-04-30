@@ -17,7 +17,7 @@
     </NpmDependencies>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="YALPS.fs" />
+    <Compile Include="Fable.YALPS.fs" />
   </ItemGroup>
   <Import Project="..\.paket\Paket.Restore.targets" />
   <ItemGroup>
