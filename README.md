@@ -29,7 +29,7 @@ let solution = model |> Solver.solveWith { solver.defaultOptions with timeout = 
 ```
 
 ## Differences
-To fit better with F# code, the ability for sequences to be substitued with objects (serving as a key-value map) was dropped. The underlying JS code still supports this, so dynamic casting will work:
+To fit better with F# code, the ability for sequences to be substituted with objects (serving as a key-value map) was dropped. The underlying JS code still supports this, so dynamic casting will work:
 ```fsharp
 let constraints =
   {| wood = Constraint.lessEq 300.0

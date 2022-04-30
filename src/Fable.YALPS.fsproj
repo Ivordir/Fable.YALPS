@@ -2,7 +2,7 @@
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <PackageId>Fable.YALPS</PackageId>
-    <Version>0.1.2</Version>
+    <Version>0.1.3</Version>
     <Authors>Ivordir</Authors>
     <Description>An F# / FABLE wrapper for the YALPS npm package.</Description>
     <PackageTags>fsharp;fable;linear programming;LP;MILP;simplex;optimization</PackageTags>
