@@ -3,4 +3,4 @@ RESTRICTION: || (== net5.0) (== net6.0)
 NUGET
   remote: https://api.nuget.org/v3/index.json
     Fable.Core (3.7)
-    FSharp.Core (6.0.3)
+    FSharp.Core (6.0.4)
