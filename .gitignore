@@ -1,6 +1,8 @@
 node_modules/
 build/
 
+fable
+
 # VS Code files
 .vscode/*
 !.vscode/settings.json

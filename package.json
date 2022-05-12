@@ -2,8 +2,8 @@
   "private": true,
   "scripts": {
     "postinstall": "dotnet tool restore",
-    "start": "dotnet fable watch src -s -o build/debug",
-    "build": "dotnet fable src -o build/release"
+    "start": "dotnet fable watch src -s -o fable",
+    "build": "dotnet fable src -s -o falbe"
   },
   "dependencies": {
     "yalps": "^0.2.4"
