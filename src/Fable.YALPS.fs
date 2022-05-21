@@ -124,7 +124,7 @@ type Model = Model<string, string>
 /// Contains functions to create `Model`s.
 module Model =
   /// Creates a model with no integer or binary variables.
-  let create
+  let inline create
     (direction: Direction)
     (objective: 'ConstraintKey)
     (constraints: ('ConstraintKey * Constraint) seq)
@@ -136,7 +136,7 @@ module Model =
     |> JsInterop.(!!) : Model<'VariableKey, 'ConstraintKey>
 
   /// Creates model with all variables indicated as integer.
-  let createAllInteger
+  let inline createAllInteger
     (direction: Direction)
     (objective: 'ConstraintKey)
     (constraints: ('ConstraintKey * Constraint) seq)
@@ -149,7 +149,7 @@ module Model =
     |> JsInterop.(!!) : Model<'VariableKey, 'ConstraintKey>
 
   /// Creates a model with all variables indicated as binary.
-  let createAllBinary
+  let inline createAllBinary
     (direction: Direction)
     (objective: 'ConstraintKey)
     (constraints: ('ConstraintKey * Constraint) seq)
@@ -163,7 +163,7 @@ module Model =
 
   /// Creates a model, marking the provided `integers` and `binaries` variables
   /// as integer and binary respectively.
-  let createInteger
+  let inline createInteger
     (direction: Direction)
     (objective: 'ConstraintKey)
     (constraints: ('ConstraintKey * Constraint) seq)
@@ -291,9 +291,6 @@ type Options = {
 
 /// Contains the main solve function(s) and the default options.
 module Solver =
-  // Convert regular JS object into a record.
-  let [<Import("defaultOptions", "yalps")>] private importedOptions: Options = jsNative
-
   /// <summary>
   /// The default options used by the solver.
   /// You can use record-update syntax to easily change one or more of the options.
@@ -303,7 +300,7 @@ module Solver =
   /// solveWith { defaultOptions with timeout = 100.0 }
   /// ```
   /// </example>
-  let defaultOptions = { importedOptions with precision = importedOptions.precision } // trigger object copy into record
+  let [<Import("backupDefaultOptions", "yalps")>] defaultOptions: Options = jsNative
 
   let [<Import("solve", "yalps")>] private importedSolve (model: Model<'VarKey, 'ConKey>, options: Options option): Solution<'VarKey> = jsNative
 
@@ -311,7 +308,7 @@ module Solver =
   /// <seealso cref="Model"/>
   /// <seealso cref="solveWith"/>
   /// <seealso cref="Solution"/>
-  let solve model = importedSolve (model, None)
+  let inline solve model = importedSolve (model, None)
 
   /// <summary>Runs the solver on the given model and using the given options.</summary>
   /// <example>
@@ -322,4 +319,4 @@ module Solver =
   /// <seealso cref="Model"/>
   /// <seealso cref="Options"/>
   /// <seealso cref="Solution"/>
-  let solveWith options model = importedSolve (model, Some options)
+  let inline solveWith options model = importedSolve (model, Some options)
