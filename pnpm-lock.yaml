@@ -1,10 +1,10 @@
 lockfileVersion: 5.3
 
 specifiers:
-  yalps: ^0.2.4
+  yalps: ^0.3.0
 
 dependencies:
-  yalps: 0.2.4
+  yalps: 0.3.0
 
 packages:
 
@@ -12,8 +12,8 @@ packages:
     resolution: {integrity: sha512-2bsegYkkHO+h/9MGbn6KWcE45cHZgPANo5LXF7EvWdT0yT2EguSVO1nDgU5c8+ZOPwp2vMNa7YFsJhVcDR9Sdg==}
     dev: false
 
-  /yalps/0.2.4:
-    resolution: {integrity: sha512-+Ul3PHbmHlz/xDoUg9eHqbchCBxmUPGmHdpGzd3w+jsO+K3k7In+ZWDG5hvWN6oBxlSPeuuEWTxVZnAcVX3sTA==}
+  /yalps/0.3.0:
+    resolution: {integrity: sha512-DnH0vvQd177LpfshlfkkoHWHX6IoZv2dUCYvy12yQHUwxBS8kadcXq8aBdoyKGURmqdCr/BzCluToP9tjyfMRw==}
     dependencies:
       heap: 0.2.7
     dev: false

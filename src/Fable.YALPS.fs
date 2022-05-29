@@ -287,6 +287,11 @@ type Options = {
   /// to prevent the algorithm from taking too long.
   /// The default value is `4096`.
   maxIterations: int
+
+  /// Controls whether variables that end up having a value of `0`
+  /// should be included in `variables` in the resulting `Solution`.
+  /// The default value is `false`.
+  includeZeroVariables: bool
 }
 
 /// Contains the main solve function(s) and the default options.

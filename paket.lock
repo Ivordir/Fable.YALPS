@@ -2,5 +2,5 @@ STORAGE: NONE
 RESTRICTION: || (== net5.0) (== net6.0)
 NUGET
   remote: https://api.nuget.org/v3/index.json
-    Fable.Core (3.7)
+    Fable.Core (3.7.1)
     FSharp.Core (6.0.4)

@@ -3,9 +3,9 @@
   "scripts": {
     "postinstall": "dotnet tool restore",
     "start": "dotnet fable watch src -s -o fable",
-    "build": "dotnet fable src -s -o falbe"
+    "build": "dotnet fable src -s -o fable"
   },
   "dependencies": {
-    "yalps": "^0.2.4"
+    "yalps": "^0.3.0"
   }
 }
