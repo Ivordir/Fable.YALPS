@@ -307,7 +307,7 @@ module Solver =
   /// </example>
   let [<Import("backupDefaultOptions", "yalps")>] defaultOptions: Options = jsNative
 
-  let [<Import("solve", "yalps")>] private importedSolve (model: Model<'VarKey, 'ConKey>, options: Options option): Solution<'VarKey> = jsNative
+  let [<Import("solve", "yalps")>] inline private importedSolve (model: Model<'VarKey, 'ConKey>, options: Options option): Solution<'VarKey> = jsNative
 
   /// <summary>Runs the solver on the given model using the default options.</summary>
   /// <seealso cref="Model"/>
