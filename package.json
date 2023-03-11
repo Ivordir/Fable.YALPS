@@ -6,6 +6,6 @@
     "build": "dotnet fable src -s -o fable"
   },
   "dependencies": {
-    "yalps": "^0.3.0"
+    "yalps": "^0.4.2"
   }
 }

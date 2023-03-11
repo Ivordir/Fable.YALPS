@@ -1,5 +1,4 @@
 node_modules/
-build/
 
 fable
 
@@ -14,9 +13,6 @@ fable
 # Paket dependency manager
 .paket/paket.exe
 paket-files/
-
-# Ionide (cross platform F# VS Code tools) working folder
-.ionide/
 
 # Build results
 [Dd]ebug/
