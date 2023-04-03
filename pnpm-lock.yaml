@@ -1,19 +1,18 @@
-lockfileVersion: 5.4
-
-specifiers:
-  yalps: ^0.4.2
+lockfileVersion: '6.0'
 
 dependencies:
-  yalps: 0.4.2
+  yalps:
+    specifier: ^0.5.4
+    version: 0.5.4
 
 packages:
 
-  /heap/0.2.7:
+  /heap@0.2.7:
     resolution: {integrity: sha512-2bsegYkkHO+h/9MGbn6KWcE45cHZgPANo5LXF7EvWdT0yT2EguSVO1nDgU5c8+ZOPwp2vMNa7YFsJhVcDR9Sdg==}
     dev: false
 
-  /yalps/0.4.2:
-    resolution: {integrity: sha512-gDJGziOh3MFKNUJSkeA2Vw0vRBkT4Xrqpvrh3ps1PCH2ITMMW8s0EHj9uy3KDjjE1pq9CdO0gQ0Uf7zDQP7Jdw==}
+  /yalps@0.5.4:
+    resolution: {integrity: sha512-8Ow1DMLjFE0YAAYYdAW1/P3YNeAEPH7Q4eEE9dVn96bI4diWQevL9cDuUGS+hfekjI6IHkcAFhK+lfLEfLdgxg==}
     dependencies:
       heap: 0.2.7
     dev: false
