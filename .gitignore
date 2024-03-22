@@ -1,18 +1,18 @@
-node_modules/
-
-fable
+/node_modules/
+/fable
+/temp
 
 # VS Code files
-.vscode/*
-!.vscode/settings.json
-!.vscode/tasks.json
-!.vscode/launch.json
-!.vscode/extensions.json
+/.vscode/*
+/!.vscode/settings.json
+/!.vscode/tasks.json
+/!.vscode/launch.json
+/!.vscode/extensions.json
 *.code-workspace
 
 # Paket dependency manager
-.paket/paket.exe
-paket-files/
+/.paket/paket.exe
+/paket-files/
 
 # Build results
 [Dd]ebug/
