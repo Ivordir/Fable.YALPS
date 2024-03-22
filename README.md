@@ -1,4 +1,4 @@
-# Fable.YALPS ![](https://badgen.net/nuget/v/Fable.YALPS) ![](https://badgen.net/npm/v/yalps)
+# Fable.YALPS [![](https://badgen.net/nuget/v/Fable.YALPS)](https://www.nuget.org/packages/Fable.YALPS) [![](https://badgen.net/npm/v/yalps)](https://www.npmjs.com/package/yalps)
 This provides F# / Fable bindings for [**Yet Another Linear Programming Solver (YALPS)**](https://github.com/Ivordir/YALPS).
 Check it out for more information. The corresponding F# API translates naturally,
 but you may ignore anything regarding objects for fields on the model (see [Differences](#Differences) for more information).
