@@ -1,9 +1,13 @@
 lockfileVersion: '6.0'
 
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
 dependencies:
   yalps:
-    specifier: ^0.5.4
-    version: 0.5.4
+    specifier: ^0.5.6
+    version: 0.5.6
 
 packages:
 
@@ -11,8 +15,8 @@ packages:
     resolution: {integrity: sha512-2bsegYkkHO+h/9MGbn6KWcE45cHZgPANo5LXF7EvWdT0yT2EguSVO1nDgU5c8+ZOPwp2vMNa7YFsJhVcDR9Sdg==}
     dev: false
 
-  /yalps@0.5.4:
-    resolution: {integrity: sha512-8Ow1DMLjFE0YAAYYdAW1/P3YNeAEPH7Q4eEE9dVn96bI4diWQevL9cDuUGS+hfekjI6IHkcAFhK+lfLEfLdgxg==}
+  /yalps@0.5.6:
+    resolution: {integrity: sha512-pqjmZGtEBAYuTR03G8SWVvR9vAyBBfSKup82CEJRx2Bta5j/1fRT29kwYdL2NaensQ5ugrYGLdHupNsYWPKGQg==}
     dependencies:
       heap: 0.2.7
     dev: false
